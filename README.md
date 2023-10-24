@@ -1,2 +1,2 @@
 # LTPII
-Repositório das listas de Exercícios  da disciplina de Linguagens e Técnicas de Programação II
+Repositório das listas de exercícios da disciplina <strong>Linguagens e Técnicas de Programação II</strong>
