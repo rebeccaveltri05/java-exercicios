@@ -4,18 +4,15 @@ public class Pessoa {
     private String sobrenome;
     private String sexo;
 
-    // Construtor Padrão
     public Pessoa() {
 
     }
 
-    // Construtor 1
     public Pessoa(String nome, String sobrenome) {
         this.nome = nome;
         this.sobrenome = sobrenome;
     }
 
-    // Construtor 2
     public Pessoa(String nome, String sobrenome, String sexo) {
         this.nome = nome;
         this.sobrenome = sobrenome;

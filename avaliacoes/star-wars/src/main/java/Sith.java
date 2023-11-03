@@ -3,11 +3,18 @@ import java.util.ArrayList;
 import interfaces.Force;
 
 public class Sith extends Pessoa implements Force {
+    
     private String titulo = "Sith";
-    private ArrayList weapons;
+    private ArrayList<Weapon> weapons;
 
-    public Sith(String nome, String sobrenome, String titulo/* , String weapons */) {
+    public Sith() {
+        super();
+        this.weapons = new ArrayList<Weapon>();
+    }
+
+    public Sith(String nome, String sobrenome) {
         super(nome, sobrenome);
+        this.weapons = new ArrayList<Weapon>();
     }
 
     public String getTitulo() {
@@ -18,13 +25,12 @@ public class Sith extends Pessoa implements Force {
         this.titulo = titulo;
     }
 
-    public Sith() {
-
+    public ArrayList<Weapon> getWeapons() {
+        return weapons;
     }
 
-    public void imprime() {
-        System.out.println(super.getNome() + " " + super.getSobrenome());
-        System.out.println("Titulo: " + titulo);
+    public void setWeapons(ArrayList<Weapon> weapons) {
+        this.weapons = weapons;
     }
 
     @Override
@@ -51,13 +57,13 @@ public class Sith extends Pessoa implements Force {
 
     }
 
-    public void levitation(String smt) {
-        smt = "Something";
-        System.out.println("Levitating " + smt);
-    }
-
     public void lightning() {
 
+    }
+
+    public void imprime() {
+        System.out.println(super.getNome() + " " + super.getSobrenome());
+        System.out.println("Titulo: " + titulo);
     }
 
 }

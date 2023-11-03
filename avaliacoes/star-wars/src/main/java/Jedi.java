@@ -5,7 +5,17 @@ import interfaces.Force;
 public class Jedi extends Pessoa implements Force {
 
     private String titulo = "Jedi";
-    private ArrayList weapons;
+    private ArrayList<Weapon> weapons;
+
+    public Jedi() {
+        super();
+        this.weapons = new ArrayList<Weapon>();
+    }
+
+    public Jedi(String nome, String sobrenome) {
+        super(nome, sobrenome);
+        this.weapons = new ArrayList<Weapon>();
+    }
 
     public String getTitulo() {
         return titulo;
@@ -15,30 +25,19 @@ public class Jedi extends Pessoa implements Force {
         this.titulo = titulo;
     }
 
-    public Jedi() {
 
+    public ArrayList<Weapon> getWeapons() {
+        return weapons;
     }
 
-    public Jedi(String nome, String sobrenome, String titulo/* , String weapons */) {
-        super(nome, sobrenome);
-        // this.titulo = titulo;
-        // this.weapons = weapons;
-    }
-
-    public void imprime() {
-        System.out.println(super.getNome() + " " + super.getSobrenome());
-        System.out.println("Titulo: " + titulo);
-        // System.out.println("Weapons: " + weapons);
+    public void setWeapons(ArrayList<Weapon> weapons) {
+        this.weapons = weapons;
     }
 
     @Override
     public void mindControl() {
-        System.out.println("[Jedi]: Controle mental ativado");
-    }
-
-    public void mindControl(String Do) {
-        Do = "Do what I wish";
-        System.out.println(Do);
+        System.out.println("[Jedi]: Do what I wish");
+    
     }
 
     @Override
@@ -57,6 +56,12 @@ public class Jedi extends Pessoa implements Force {
     }
 
     public void patience() {
+
+    }
+
+    public void imprime() {
+        System.out.println(super.getNome() + " " + super.getSobrenome());
+        System.out.println("Titulo: " + titulo);
     }
 
 }
