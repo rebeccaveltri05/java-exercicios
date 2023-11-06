@@ -1,4 +1,4 @@
-public class Weapon extends Pessoa {
+public class Weapon {
 
     private String descricao;
     private int dano;
