@@ -27,7 +27,7 @@ public class App {
         obiwan.getWeapons().add(sabre1.pickUp());
         vader.getWeapons().add(sabre2.pickUp());
         obiwan.getWeapons().add(blast.pickUp());
-             
+
         for(Weapon s: vader.getWeapons()) {
             if(s.getClass().getName().equals("Saber")) {
                 ((Saber) s).slash();
