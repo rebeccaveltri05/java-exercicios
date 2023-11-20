@@ -1,5 +1,5 @@
 # java-exercicios
-Repositório das listas de exercícios da disciplina <strong>Linguagens e Técnicas de Programação II</strong>.
+Repositório das listas de exercícios da disciplina <strong>Linguagens e Técnicas de Programação II</strong> e <strong>Introdução a Orientação a Objetos</Strong>.
 
 Como criar uma branch neste repositório:
 
