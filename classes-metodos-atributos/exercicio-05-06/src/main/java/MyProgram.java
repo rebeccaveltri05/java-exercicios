@@ -3,46 +3,50 @@ import java.util.Scanner;
 
 public class MyProgram {
 
-    Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {
 
-    int numeroAleatorio = new Random().nextInt(100);
-    int tentativas = 0;
-    int contador = 0;
-    int  i;
+        Scanner in = new Scanner(System.in);
 
-    
-    for (i = 0; i >= tentativas; i++){
+        int numeroAleatorio = new Random().nextInt(100);
+        int tentativas = 0;
+        int contador = 0;
+        int i;
 
-        System.out.println("Adivinhe o número?");
+        for (i = 0; i >= tentativas; i++) {
 
-        int numero = in.nextInt();
+            System.out.println("Adivinhe o número?");
 
-        if (numero > 100) {
-            System.out.println("O número digitado não pode ser maior que 100.");
-        } else {
+            int numero = in.nextInt();
 
-            if (numero == numeroAleatorio) {
-                System.out.println("Você acetou!!");
-                break;
-
+            if (numero > 100) {
+                System.out.println("O número digitado não pode ser maior que 100.");
             } else {
 
-                contador++;
-                System.out.println("Errou!! você tem " + contador + " chances para acertar");
-
-                if (numero > numeroAleatorio) {
-                    System.out.println("O número que foi digitado é maior que o número sorteado.");
+                if (numero == numeroAleatorio) {
+                    System.out.println("Você acertou!!");
+                    break;
 
                 } else {
-                    System.out.println("O número que foi digitado é menor que o número sorteado.");
 
+                    contador++;
+                    System.out.println("Errou!! você tem " + contador + " chances para acertar");
+
+                    if (numero > numeroAleatorio) {
+                        System.out.println("O número que foi digitado é maior que o número sorteado.");
+
+                    } else {
+                        System.out.println("O número que foi digitado é menor que o número sorteado.");
+                        
+                    }
+                    in.close(); 
                 }
+
             }
 
         }
+
+        System.out.println("Número sorteado: " + numeroAleatorio);
+        
     }
-
-    System.out.println("Número sorteado: "+numeroAleatorio);
-
-}
+    
 }

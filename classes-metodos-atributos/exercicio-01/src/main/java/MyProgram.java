@@ -26,6 +26,7 @@ import java.util.Scanner;
         } else {
             System.out.println("Voce foi Reprovado!");
         }
+    in.close();
     }
 
 }
