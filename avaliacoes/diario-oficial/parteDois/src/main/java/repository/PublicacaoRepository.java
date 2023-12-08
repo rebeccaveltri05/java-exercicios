@@ -1,24 +1,28 @@
 package repository;
 
-public abstract class PublicacaoRepository implements Repository {
+import java.util.ArrayList;
+
+import model.Publicacao;
+
+public class PublicacaoRepository implements Repository<Publicacao> {
 
     @Override
-    public void salvar(Object obj) {
+    public void salvar(Publicacao obj) {
         System.out.println("O Diário Oficial foi Registrado com Sucesso.");
     }
 
     @Override
-    public void novo(Object obj) {
+    public void novo(Publicacao obj) {
         System.out.println("O Diário Oficial foi Criado com Sucesso.");
     }
 
     @Override
-    public void apagar(Object obj) {
+    public void apagar(Publicacao obj) {
         System.out.println("O Diário Oficial foi Apagado com Sucesso.");
     }
 
     @Override
-    public Object buscar() {
-        return new Object();
+    public ArrayList<Publicacao> buscar() {
+        return new ArrayList<Publicacao>();
     }
 }

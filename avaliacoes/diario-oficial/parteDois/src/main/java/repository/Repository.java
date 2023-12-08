@@ -1,13 +1,19 @@
 package repository;
 
-public interface Repository {
+import java.util.ArrayList;
 
-    void salvar(Object obj);
+/* Essa é a forma mais interessante de se criar a interface: definindo um tipo para ela.
+ * Uma resolução alternativa (e esperada como entrega) é não colocar o <Type> e onde estiver type
+ * colocar Object.
+ */
+public interface Repository<Type> {
 
-    void novo(Object obj);
+    void salvar(Type obj);
 
-    void apagar(Object obj);
+    void novo(Type obj);
 
-    Object buscar();
+    void apagar(Type obj);
+
+    ArrayList<Type> buscar();
 
 }

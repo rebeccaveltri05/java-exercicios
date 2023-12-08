@@ -30,7 +30,15 @@ public class Legislacao extends Publicacao {
     @Override
     public void imprimirPublicação() {
         for (Bloco b : this.getBlocos()) {
-            System.out.println(b.getTexto());
+            switch (b.getTipo()) {
+                case Texto:
+                    System.out.println(b.getTexto());
+                    break;
+                case Imagem:
+                    // Implementar um mecanismo para exibir imagens.
+                case Tabela:
+                    // Implementar um mecanismo para exibir tabelas.
+            }
         }
     }
 

@@ -14,8 +14,16 @@ public class Corrigenda extends Publicacao {
     public void imprimirPublicação() {
         System.out.println(this.getTituloPrincipal());
         System.out.println(this.getTituloAuxiliar());
-        for (Bloco bloco : this.getBlocos()) {
-            System.out.println(bloco.getTexto());
+        for (Bloco b : this.getBlocos()) {
+            switch (b.getTipo()) {
+                case Texto:
+                    System.out.println(b.getTexto());
+                    break;
+                case Imagem:
+                    // Implementar um mecanismo para exibir imagens.
+                case Tabela:
+                    // Implementar um mecanismo para exibir tabelas.
+            }
         }
     }
 
