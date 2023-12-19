@@ -2,8 +2,6 @@ package model;
 
 import java.util.ArrayList;
 
-import model.enums.TipoBloco;
-
 public class Publicacao {
 
     private String tituloPrincipal;
