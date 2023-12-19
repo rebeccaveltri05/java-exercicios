@@ -40,3 +40,11 @@ Repositório das listas de exercícios da disciplina <strong>Linguagens e Técni
 - **Solicitar mesclagem**: para que as modificações sejam refletidas no branch principal (`main`), é necessaŕio realizar um `pull request`. Esta solicitação é responsável por informar a outras pessoas sobre as alterações feitas em uma ramificação de um repositório. 
 > Utilize o GitHub para realizar esta etapa.
 
+## Instruções Úteis:
+
+- **Criar uma branch a partir de uma outra**: se enventualmente modificações ocorreram em uma branch e é preciso levar essas modificações para uma outra branch.
+> Exemplo de como criar a branch wip-nova-branch a partir da branch atual.
+```
+git checkout -b wip-nova-branch
+```
+
