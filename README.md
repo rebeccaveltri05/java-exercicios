@@ -32,6 +32,11 @@ Repositório das listas de exercícios da disciplina <strong>Linguagens e Técni
   ```
 
 - **Efetuar o push**: envie suas modificações sempre que quiseres que tuas modificações sejam persistidas on-line no repositório e na branch criada anteriormente.
+> Exemplo de como enviar as modificações confirmadas quando a branch ainda não existir no repositório:
+  ```
+  git push --set-upstream origin wip-exercícios-14-ao-20
+  ```
+
 > Exemplo de como enviar as modificações confirmadas para o repositório:
   ```
   git push
