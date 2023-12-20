@@ -16,14 +16,12 @@ public class MyProgram {
         System.out.println("Entre com o terceiro valor");
         valor3 = in.nextInt();
 
-        if (valor1 > valor2 && valor1 > valor3) {
+        if (valor1 > valor2 && valor1 > valor3)
             System.out.println("Maior valor é :" + valor1);
-        }
-        if (valor2 > valor1 && valor2 > valor3) {
+        else if (valor2 > valor1 && valor2 > valor3)
             System.out.println("Maior valor é :" + valor2);
-        } else {
+        else
             System.out.println("Maior valor é :" + valor3);
-        }
 
         in.close();
     }
