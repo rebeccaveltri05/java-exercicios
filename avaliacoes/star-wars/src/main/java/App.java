@@ -2,12 +2,12 @@ public class App {
 
     public static void main(String[] args) {
 
-        Pessoa p1 = new Pessoa();
-        Pessoa p2 = new Pessoa("Luke", "Skywalker", "Masculino");
+        Pessoa p1 = new Pessoa();  
         p1.setNome("Leia");
         p1.setSobrenome("Organa");
         p1.setSexo("Feminino");
         p1.imprime();
+        Pessoa p2 = new Pessoa("Luke", "Skywalker", "Masculino");
         p2.imprime();
 
         Jedi obiwan = new Jedi("Obi-Wan", "Kenobi");

@@ -1,11 +1,11 @@
 public class Pessoa {
-    
+
     private String nome;
     private String sobrenome;
     private String sexo;
 
     public Pessoa() {
-
+ 
     }
 
     public Pessoa(String nome, String sobrenome) {
