@@ -16,7 +16,7 @@ Repositório das listas de exercícios da disciplina <strong>Linguagens e Técni
 
 > Exemplo de criação de uma branch para resolução de uma lista de exercícios:
   ```
-  git checkout -b wip-exercicios-14-ao-20
+  git checkout -b wip-seunome-exercicios-14-ao-20
   ```
 
 - **Adicionar os arquivos**: após a implementação das funcionalidades, adicione os arquivos alterados para prepará-los para confirmação e envio a este repositório.
