@@ -1,3 +1,4 @@
+import vought.BillyCompoundV;
 import vought.Hero;
 import vought.Person;
 
@@ -7,10 +8,9 @@ public class MyApp {
 
         Person billy = new Person("Billy", "Butcher");
         Hero billyHero = new Hero(billy, "Brutus", 10, 10, 10);
-        System.out.println("..... " + billyHero.getName());
-
-
-        
+        BillyCompoundV billyCompoundV = new BillyCompoundV();
+        billyCompoundV.activateDurability(billyHero);
+        System.out.println("Energy is now " + billyHero.getEnergy());
 
     }
 }
