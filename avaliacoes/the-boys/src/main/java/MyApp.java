@@ -18,20 +18,26 @@ public class MyApp {
         Person anne = new Person("Rebecca", "Anne January");
         Person john = new Person("John", "Guilman");
 
-        StarLight luzEstrela = new StarLight(anne, "Starlight", 0, 0, 0);
-        Homelander capPatria = new Homelander(john, "Homelander", 0, 0, 0);
+        StarLight starlight = new StarLight(anne, "Starlight", 100, 80, 90);
+        Homelander homelander = new Homelander(john, "Homelander", 100, 100, 100);
 
         StarLightCompoundV anneCompoundV = new StarLightCompoundV();
         HomelanderCompoundV johnCompoundV = new HomelanderCompoundV();
 
-        anneCompoundV.usePower(luzEstrela);
-        anneCompoundV.fly(luzEstrela);
-        johnCompoundV.usePower(capPatria);
-        johnCompoundV.fly(capPatria);
+        anneCompoundV.usePower(starlight);
+        anneCompoundV.giveStrength(starlight);
+        anneCompoundV.maxSpeed(starlight);
+        anneCompoundV.fly(starlight);
+        anneCompoundV.activateDurability(starlight);
+        johnCompoundV.usePower(homelander);
+        johnCompoundV.giveStrength(homelander);
+        johnCompoundV.maxSpeed(homelander);
+        johnCompoundV.fly(homelander);
+        johnCompoundV.activateDurability(homelander);
 
         Team seven = new Team();
-        seven.getHeroes().add(luzEstrela);
-        seven.getHeroes().add(capPatria);        
+        seven.getHeroes().add(starlight);
+        seven.getHeroes().add(homelander);        
 
         Hero billyHero = new Hero(billy, "Brutus", 10, 10, 10);
         BillyCompoundV billyCompoundV = new BillyCompoundV();
