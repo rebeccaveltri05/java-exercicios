@@ -6,7 +6,7 @@ public class StarLightCompoundV implements BasicPower<StarLight>, SpecialPower<S
 		
 	}
 
-	public void giveStrenght(StarLight starLight) {
+	public void giveStrength(StarLight starLight) {
 
 	}
 

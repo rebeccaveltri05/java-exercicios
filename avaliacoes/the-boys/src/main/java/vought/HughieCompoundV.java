@@ -1,6 +1,6 @@
 package vought;
 
-public class BillyCompoundV implements BasicPower<Hero>, SpecialPower<Hero> {
+public class HughieCompoundV implements BasicPower<Hero>, SpecialPower<Hero> {
 
 	public void activateDurability(Hero hero) {
 		hero.setEnergy(100);

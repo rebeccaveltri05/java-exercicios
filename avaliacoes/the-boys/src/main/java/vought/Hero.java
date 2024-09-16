@@ -4,25 +4,25 @@ public class Hero extends Person {
 
 	private String nickname;
 	private int energy;
-	private int strenght;
+	private int strength;
 	private int speed;
 
 	public Hero() {
 
 	}
 
-	public Hero(String nickname, int energy, int strenght, int speed) {
+	public Hero(String nickname, int energy, int strength, int speed) {
 		this.nickname = nickname;
 		this.energy = energy;
-		this.strenght = strenght;
+		this.strength = strength;
 		this.speed = speed;
 	}
 
-	public Hero(Person person, String nickname, int energy, int strenght, int speed) {
+	public Hero(Person person, String nickname, int energy, int strength, int speed) {
 		super(person.getName(), person.getSurname());
 		this.nickname = nickname;
 		this.energy = energy;
-		this.strenght = strenght;
+		this.strength = strength;
 		this.speed = speed;
 	}
 
@@ -42,12 +42,12 @@ public class Hero extends Person {
 		this.energy = energy;
 	}
 
-	public int getStrenght() {
-		return strenght;
+	public int getStrength() {
+		return strength;
 	}
 
-	public void setStrenght(int strenght) {
-		this.strenght = strenght;
+	public void setStrength(int strength) {
+		this.strength = strength;
 	}
 
 	public int getSpeed() {

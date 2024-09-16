@@ -1,5 +1,6 @@
 package vought;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Team {
@@ -7,7 +8,7 @@ public class Team {
         private List<Hero> heroes;
 
         public Team() {
-
+                this.heroes = new ArrayList<Hero>();
         }
 
         public Team(List<Hero> heroes) {
