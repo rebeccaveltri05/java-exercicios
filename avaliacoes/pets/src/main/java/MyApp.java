@@ -5,6 +5,8 @@ import pets.Tutor;
 import pets.Veterinario;
 
 public class MyApp {
+
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         // instanciando os tutores
         Tutor tutor1 = new Tutor("Ana", "Aninha");

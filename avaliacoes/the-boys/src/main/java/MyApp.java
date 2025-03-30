@@ -10,6 +10,7 @@ import vought.Team;
 
 public class MyApp {
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
 
         Person ashley = new Person("Ashley", "Barret");
