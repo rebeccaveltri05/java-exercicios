@@ -5,7 +5,7 @@ Repositório das listas de exercícios da disciplina <strong>Linguagens e Técni
 - [Como Contribuir](#como-contribuir-nesse-repositório)
 - [Instruções de Branch](#instruções-úteis)
 - [Clone e Fork](#clonagem-e-fork)
-- [Abrir Pull Request](#criar-um-pull-request-(pr))
+- [Abrir Pull Request](#criar-um-pull-request)
 
 ## Como Contribuir Nesse Repositório
 
@@ -60,11 +60,11 @@ git checkout -b wip-nova-branch
 ```
 ## Clonagem e Fork
 
-O fork cria uma cópia do repositório para a sua conta no GitHub, permitindo que você faça alterações que poderão ser implementadas nesse repositório através do [Pull Request](#solicitar-mesclagem).
+O fork cria uma cópia do repositório para a sua conta no GitHub, permitindo que você faça alterações que poderão ser implementadas nesse repositório através do [Pull Request](#criar-um-pull-request).
 
 - **Como criar um Fork**:
   <ul>
-    <li>No canto superior direito do repositório, clique no botão "Fork"</li>.
+    <li>No canto superior direito do repositório, clique no botão "Fork".</li>
     <li>Escolha a sua conta para criar a cópia do repositório. Ele será copiado para o seu perfil.</li>
   </ul>
 
@@ -84,7 +84,7 @@ Criada a branch, implemente o código com as novas funcionalidades do projeto.
 - **Enviar as Alterações para o GitHub (Push)**
 Agora, envie a sua branch com as alterações para o seu repositório no GitHub.
 
-## Criar um Pull Request (PR)
+## Criar um Pull Request
 Agora que as alterações estão no seu repositório no GitHub, é hora de abrir um Pull Request para que o dono do repositório original possa revisar e, possivelmente, aceitar as mudanças.
     
 1.  Clique na aba "Pull Requests"
