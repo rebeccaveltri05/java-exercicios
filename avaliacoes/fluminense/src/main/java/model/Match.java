@@ -16,6 +16,7 @@ public class Match {
     private Team home;
 
     /** The visiting team */
+    
     private Team visitor;
 
     /** The score of the home team */

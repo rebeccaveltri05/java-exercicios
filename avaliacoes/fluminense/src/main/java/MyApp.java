@@ -47,5 +47,6 @@ public class MyApp {
         players.add(john);
         players.add(andre);
         fluminense.setPlayers(players);
+        
     }
 }
